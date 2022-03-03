@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = { git: "https://github.com/CodiTramuntana/decidim.git", branch: "release/0.24-stable" }.freeze
+DECIDIM_VERSION = { git: "https://github.com/CodiTramuntana/decidim.git", branch: "release/0.25-stable" }.freeze
 
 gem "daemons"
 gem "delayed_job_active_record"
@@ -14,6 +14,7 @@ gem "whenever"
 
 gem "figaro", ">= 1.1.1"
 gem "openssl"
+gem "webpacker"
 
 gem "decidim", DECIDIM_VERSION
 
