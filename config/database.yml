@@ -16,7 +16,7 @@ test:
   <<: *default
   database: <%= ENV['DB_TEST_DATABASE'] %>
 
-integration:
+preprod:
   <<: *default
 
 production:
