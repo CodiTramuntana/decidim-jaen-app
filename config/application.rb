@@ -19,5 +19,17 @@ module DecidimJaenApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
+
+    # Settings in config/environments/* take precedence over those specified here.
+    # Application configuration should go into files in config/initializers
+    # -- all .rb files in that directory are automatically loaded.
+    config.autoload_paths += %W(#{config.root}/lib)
+
+    # Make decorators available
+    config.to_prepare do
+      Dir.glob("#{Rails.root}app/decorators/**/*_decorator*.rb").each do |c|
+        require_dependency(c)
+      end
+    end
   end
 end

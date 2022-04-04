@@ -18,6 +18,8 @@ gem "webpacker"
 
 gem "decidim", DECIDIM_VERSION
 
+gem "devise_saml_authenticatable", github: "apokalipto/devise_saml_authenticatable"
+
 group :development, :test do
   gem "better_errors"
   gem "binding_of_caller"

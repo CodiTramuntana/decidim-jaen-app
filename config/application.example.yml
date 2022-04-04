@@ -15,6 +15,9 @@ default: &default
   # GeoCoder configuration (developer.here.com)
   GEOCODER_LOOKUP_API_KEY: "here_api_key"
   SECRET_KEY_BASE: "secret_key_base"
+  # Cl@ve
+  CLAVE_NIF_DIR: "nif_dir"
+  CLAVE_CERT: "path_to_cert"
 
 development:
   <<: *default
