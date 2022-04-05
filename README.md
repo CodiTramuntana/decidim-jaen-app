@@ -23,6 +23,18 @@ By the moment, there's no Here Maps configured yet.
 
 You're good to go!
 
+## Contribute
+Set the application up and running in your local machine for development.
+First configure a `config/application.yml` file from `config/application.example.yml`.
+
+```bash
+yarn install
+bin/rails db:create
+bin/rails db:migrate
+bin/rails db:seed
+bin/rails s
+```
+
 ## Testing
 
 Configure the name of the test DB in you `config/application.yml` file and run:
