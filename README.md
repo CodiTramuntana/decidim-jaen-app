@@ -28,10 +28,12 @@ Set the application up and running in your local machine for development.
 First configure a `config/application.yml` file from `config/application.example.yml`.
 
 ```bash
-yarn install
+bundle install
+npm install
 bin/rails db:create
 bin/rails db:migrate
 bin/rails db:seed
+bin/webpack-dev-server
 bin/rails s
 ```
 
