@@ -536,6 +536,9 @@ GEM
     omniauth-rails_csrf_protection (1.0.1)
       actionpack (>= 4.2)
       omniauth (~> 2.0)
+    omniauth-saml (2.1.0)
+      omniauth (~> 2.0)
+      ruby-saml (~> 1.12)
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
@@ -684,6 +687,9 @@ GEM
     rubocop-rspec (1.43.2)
       rubocop (~> 0.87)
     ruby-progressbar (1.11.0)
+    ruby-saml (1.12.2)
+      nokogiri (>= 1.10.5)
+      rexml
     ruby-vips (2.1.4)
       ffi (~> 1.12)
     ruby2_keywords (0.0.5)
@@ -802,6 +808,8 @@ DEPENDENCIES
   figaro (>= 1.1.1)
   letter_opener_web
   listen (~> 3.1.0)
+  omniauth-rails_csrf_protection (~> 1.0)
+  omniauth-saml
   openssl
   puma
   spring

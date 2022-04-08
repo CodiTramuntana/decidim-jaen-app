@@ -18,6 +18,9 @@ gem "webpacker"
 
 gem "decidim", DECIDIM_VERSION
 
+gem "omniauth-saml"
+gem 'omniauth-rails_csrf_protection', '~> 1.0'
+
 group :development, :test do
   gem "better_errors"
   gem "binding_of_caller"
