@@ -17,6 +17,7 @@ gem "openssl"
 gem "webpacker"
 
 gem "decidim", DECIDIM_VERSION
+gem "decidim-consultations", DECIDIM_VERSION
 
 group :development, :test do
   gem "better_errors"

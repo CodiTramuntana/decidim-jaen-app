@@ -49,6 +49,10 @@ GIT
     decidim-comments (0.25.2)
       decidim-core (= 0.25.2)
       redcarpet (~> 3.5, >= 3.5.1)
+    decidim-consultations (0.25.2)
+      decidim-admin (= 0.25.2)
+      decidim-comments (= 0.25.2)
+      decidim-core (= 0.25.2)
     decidim-core (0.25.2)
       active_link_to (~> 1.0)
       acts_as_list (~> 0.9)
@@ -796,6 +800,7 @@ DEPENDENCIES
   byebug
   daemons
   decidim!
+  decidim-consultations!
   decidim-dev!
   delayed_job_active_record
   faker
