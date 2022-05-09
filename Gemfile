@@ -19,6 +19,8 @@ gem "webpacker"
 gem "decidim", DECIDIM_VERSION
 gem "decidim-consultations", DECIDIM_VERSION
 
+gem "decidim-file_authorization_handler", git: "https://github.com/CodiTramuntana/decidim-file_authorization_handler.git", tag: "v0.25.2"
+
 group :development, :test do
   gem "better_errors"
   gem "binding_of_caller"
