@@ -6,8 +6,9 @@ ruby RUBY_VERSION
 
 DECIDIM_VERSION = { git: "https://github.com/CodiTramuntana/decidim.git", branch: "release/0.25-stable" }.freeze
 gem "decidim-conferences", DECIDIM_VERSION
-gem "decidim-term_customizer", git:"https://github.com/mainio/decidim-module-term_customizer.git", branch: "release/0.25-stable"
+gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer.git", branch: "release/0.25-stable"
 gem "decidim-verifications-members_picker", git: "https://github.com/gencat/decidim-verifications-members_picker.git", tag: "0.0.2"
+
 gem "daemons"
 gem "delayed_job_active_record"
 gem "puma"
