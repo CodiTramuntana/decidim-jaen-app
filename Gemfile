@@ -13,7 +13,6 @@ gem "webpacker"
 
 gem "figaro", ">= 1.1.1"
 gem "openssl"
-gem "webpacker"
 
 # if deploying to a dedicated server
 # gem "daemons"
