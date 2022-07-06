@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/CodiTramuntana/decidim-file_authorization_handler.git
+  revision: a9aa4311460123c5d0e991faf96479b250098d53
+  tag: v0.25.2
+  specs:
+    decidim-file_authorization_handler (0.25.2)
+      decidim (~> 0.25.2)
+      decidim-admin (~> 0.25.2)
+      rails (>= 5.2)
+
+GIT
   remote: https://github.com/CodiTramuntana/decidim.git
   revision: 1e56b41b5d74d024f18c9cd48e17177c8fcbed6d
   branch: release/0.25-stable
@@ -49,6 +59,10 @@ GIT
     decidim-comments (0.25.2)
       decidim-core (= 0.25.2)
       redcarpet (~> 3.5, >= 3.5.1)
+    decidim-consultations (0.25.2)
+      decidim-admin (= 0.25.2)
+      decidim-comments (= 0.25.2)
+      decidim-core (= 0.25.2)
     decidim-core (0.25.2)
       active_link_to (~> 1.0)
       acts_as_list (~> 0.9)
@@ -796,7 +810,9 @@ DEPENDENCIES
   byebug
   daemons
   decidim!
+  decidim-consultations!
   decidim-dev!
+  decidim-file_authorization_handler!
   delayed_job_active_record
   faker
   figaro (>= 1.1.1)
