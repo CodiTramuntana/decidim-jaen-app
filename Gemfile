@@ -13,9 +13,13 @@ gem "decidim-file_authorization_handler", git: "https://github.com/CodiTramuntan
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer.git", branch: "release/0.26-stable"
 gem "decidim-verifications-members_picker", git: "https://github.com/gencat/decidim-verifications-members_picker.git", tag: "0.0.2"
 
+gem "daemons"
+gem "delayed_job_active_record"
+gem "puma"
+gem "whenever"
+
 gem "figaro", ">= 1.1.1"
 gem "openssl"
-gem "puma"
 gem "uglifier", ">= 1.3.0"
 gem "webpacker"
 
