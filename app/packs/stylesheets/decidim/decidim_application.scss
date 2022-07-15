@@ -5,3 +5,102 @@
 // To override CSS variables or Foundation settings use _decidim-settings.scss
 //
 // By default this is empty.
+
+.heading2 {
+  color: $primary-color !important;
+}
+
+.topbar__notifications .icon,
+.topbar__conversations .icon {
+  fill: $primary-color;
+} 
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  color: $primary-color !important;
+  border-color: #46674c transparent transparent;
+  border-top-color: #46674c !important;
+}
+
+.header {
+  .title-bar {
+    background-color: #e2e8e4;
+    a,
+    span {
+      color: $primary-color;
+    }
+
+    span {
+      fill: $primary-color !important;
+      border-top-color: none;
+    }
+
+    input,
+    button {
+      background-color: #fff;
+      
+      &::placeholder {
+        color: #000 !important;
+      }
+    }
+
+    .icon {
+      color: #000;
+    }
+
+    .icon--pencil {
+      color: $primary-color;
+    }
+  }
+}
+
+// Navbar
+.navbar {
+  background: #97b49e;
+}
+
+.main-nav__link a {
+  color: #000;
+}
+
+.main-nav__link--active {
+  background-color: $primary-color;
+}
+
+.main-nav__link--active a {
+  box-shadow: inset 0 4px 0 0 #97b49e;
+  color: #fff;
+}
+
+.topbar__dropmenu .is-dropdown-submenu li a {
+  color: $primary-color !important;
+}
+
+.card--activity {
+  .text-medium a,
+  .author__name{
+    color: $secondary-color !important;
+  }
+}
+
+.card__link {
+  color: $primary-color !important;
+}
+
+.text-medium a,
+.card li a {
+  color: $secondary-color !important;
+}
+
+.process-header__container {
+  .heading2 {
+    color: #fff !important;
+  }
+  .external-link-container,
+  .process-header__phase a {
+    color: $secondary-color !important;
+  }
+}
+
+.statistics-cell .statistic__data::after {
+  border-left: 2px solid $secondary-color !important;
+}
