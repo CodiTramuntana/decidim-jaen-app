@@ -23,6 +23,9 @@ gem "openssl"
 gem "uglifier", ">= 1.3.0"
 gem "webpacker"
 
+gem "omniauth-saml", "~> 2.1.0"
+gem 'omniauth-rails_csrf_protection', '~> 1.0'
+
 group :development, :test do
   gem "better_errors"
   gem "binding_of_caller"
