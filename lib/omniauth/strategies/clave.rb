@@ -10,7 +10,6 @@ module OmniAuth
     # - https://github.com/omniauth/omniauth/blob/master/lib/omniauth/strategy.rb
     # - https://github.com/omniauth/omniauth-oauth2/blob/master/lib/omniauth/strategies/oauth2.rb
     class Clave < ::OmniAuth::Strategies::SAML
-
       def info
         h= OmniAuth::Strategy.instance_method(:info).bind(self).call
         # last_name contains both surnames (García Rodríguez in Antonio García Rodríguez)
@@ -18,7 +17,6 @@ module OmniAuth
         h["nickname"]= h["name"].gsub(" ", "_").downcase
         h
       end
-
     end
   end
 end
