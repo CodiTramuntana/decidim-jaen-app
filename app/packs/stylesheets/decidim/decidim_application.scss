@@ -104,3 +104,9 @@
 .statistics-cell .statistic__data::after {
   border-left: 2px solid $secondary-color !important;
 }
+
+.main-footer__badge {
+  img {
+    max-width: 58%;
+  }
+}
