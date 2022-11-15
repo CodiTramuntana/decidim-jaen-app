@@ -36,7 +36,7 @@ module ClaveServices
 
     def pristine_template
       @pristine_template||= <<~EOTEMPLATE.squish
-        <saml2p:AuthnRequest xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:eidas="http://eidas.europa.eu/saml-extensions" xmlns:eidas-natural="http://eidas.europa.eu/attributes/naturalperson" ID=":{id}" Version="2.0" IssueInstant="2022-07-09T08:07:46Z" Destination="https://se-pasarela.clave.gob.es/Proxy2/ServiceProvider" ForceAuthn="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsumerServiceURL=":{callback_url}" ProviderName="S2833002E_E04975701;SPApp">
+        <saml2p:AuthnRequest xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:eidas="http://eidas.europa.eu/saml-extensions" xmlns:eidas-natural="http://eidas.europa.eu/attributes/naturalperson" ID=":{id}" Version="2.0" IssueInstant="2022-07-09T08:07:46Z" Destination="#{Rails.application.secrets.omniauth.clave.idp_sso_service_url}" ForceAuthn="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsumerServiceURL=":{callback_url}" ProviderName="S2833002E_E04975701;SPApp">
           <saml2:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">:{issuer}</saml2:Issuer>
           <saml2p:Extensions>
             <eidas:SPType>public</eidas:SPType>
