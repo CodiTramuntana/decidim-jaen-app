@@ -1,0 +1,8 @@
+es:
+  decidim:
+    authorization_handlers:
+      file_authorization_handler:
+        fields:
+          allowed_districts: Distritos permitidos
+          min_age: Edad mínima
+          max_age: Edad máxima

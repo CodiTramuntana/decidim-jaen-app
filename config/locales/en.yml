@@ -31,3 +31,10 @@
 
 en:
   hello: "Hello world"
+  decidim:
+    authorization_handlers:
+      file_authorization_handler:
+        fields:
+          allowed_districts: Allowed districts
+          min_age: Minimum age
+          max_age: Maximum age
