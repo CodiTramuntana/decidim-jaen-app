@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/CodiTramuntana/decidim-file_authorization_handler.git
+  revision: 66adaf43ee09aedb8966a7efaf575ef83846ef51
+  tag: v0.26.2.5
+  specs:
+    decidim-file_authorization_handler (0.26.2.5)
+      decidim (~> 0.26.2)
+      decidim-admin (~> 0.26.2)
+      rails (>= 5.2)
+
+GIT
   remote: https://github.com/CodiTramuntana/decidim-module-age_and_district_action_authorization
   revision: 9fdd678c143f72bc271651ce6d50c929f20afc88
   specs:
@@ -205,14 +215,6 @@ GIT
     decidim-term_customizer (0.26.0)
       decidim-admin (~> 0.26.0)
       decidim-core (~> 0.26.0)
-
-PATH
-  remote: /home/oliver/prog/decidim/modules/decidim-file_authorization_handler-codit
-  specs:
-    decidim-file_authorization_handler (0.26.2.5)
-      decidim (~> 0.26.2)
-      decidim-admin (~> 0.26.2)
-      rails (>= 5.2)
 
 GEM
   remote: https://rubygems.org/
