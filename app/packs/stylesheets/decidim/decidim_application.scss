@@ -7,16 +7,16 @@
 // By default this is empty.
 
 .heading2 {
-  color: $primary-color !important;
+  color: $primary !important;
 }
 
 .topbar__notifications .icon,
 .topbar__conversations .icon {
-  fill: $primary-color;
+  fill: $primary !important;
 } 
 
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-  color: $primary-color !important;
+  color: $primary !important;
   border-color: #46674c transparent transparent;
   border-top-color: #46674c !important;
 }
@@ -26,11 +26,11 @@
     background-color: #e2e8e4;
     a,
     span {
-      color: $primary-color;
+      color: $primary;
     }
 
     span {
-      fill: $primary-color !important;
+      fill: $primary !important;
       border-top-color: none;
     }
 
@@ -48,7 +48,7 @@
     }
 
     .icon--pencil {
-      color: $primary-color;
+      color: $primary;
     }
   }
 }
@@ -63,7 +63,7 @@
 }
 
 .main-nav__link--active {
-  background-color: $primary-color;
+  background-color: $primary;
 }
 
 .main-nav__link--active a {
@@ -72,7 +72,7 @@
 }
 
 .topbar__dropmenu .is-dropdown-submenu li a {
-  color: $primary-color !important;
+  color: $primary !important;
 }
 
 .card--activity {
@@ -83,7 +83,7 @@
 }
 
 .card__link {
-  color: $primary-color !important;
+  color: $primary !important;
 }
 
 .text-medium a,
