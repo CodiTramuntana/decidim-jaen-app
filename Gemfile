@@ -14,6 +14,8 @@ gem "decidim-file_authorization_handler", git: "https://github.com/CodiTramuntan
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer.git"
 gem "decidim-verifications-members_picker", git: "https://github.com/gencat/decidim-verifications-members_picker.git", tag: "0.0.2"
 
+gem "decidim-clave", git: "https://github.com/CodiTramuntana/decidim-module-clave.git"
+
 # temporal solution while gems embrace new psych 4 (the default in Ruby 3.1) behavior.
 gem "psych", "< 4"
 
