@@ -870,6 +870,7 @@ DEPENDENCIES
   fog-aws
   letter_opener_web
   listen
+  matrix
   openssl
   psych (< 4)
   puma
