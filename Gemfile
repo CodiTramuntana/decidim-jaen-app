@@ -11,6 +11,7 @@ gem "decidim", DECIDIM_VERSION
 # temporal solution while gems embrace new psych 4 (the default in Ruby 3.1) behavior.
 gem "psych", "< 4"
 
+# required by puma
 gem "matrix"
 gem "puma"
 gem "uglifier", ">= 1.3.0"
