@@ -15,8 +15,9 @@ default: &default
   DB_POOL: "<%= ENV.fetch("RAILS_MAX_THREADS") { "5" } %>"
   DB_HOST: <%= ENV.fetch("DATABASE_HOST") { "localhost" } %>
   DB_DATABASE: "jaen_app"
-  DB_USERNAME: "database username"
-  DB_PASSWORD: "database password"
+  DB_TEST_DATABASE: "jaen_app_test"
+  DB_USERNAME: "db_username"
+  DB_PASSWORD: "db_username_password"
   # Mailer configuration
   MAILER_SMTP_ADDRESS: "smtp email address"
   MAILER_SMTP_DOMAIN: "smtp email domain"
@@ -32,7 +33,6 @@ development:
 
 test:
   <<: *default
-  DB_TEST_DATABASE: "jaen_app_test"
 
 integration:
   <<: *default

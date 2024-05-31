@@ -16,9 +16,13 @@ gem "decidim-verifications-members_picker", git: "https://github.com/gencat/deci
 
 gem "decidim-clave", git: "https://github.com/CodiTramuntana/decidim-module-clave.git"
 
+gem "decidim-cdtb", git: "https://github.com/CodiTramuntana/decidim-module-cdtb.git", branch: "main"
+
 # temporal solution while gems embrace new psych 4 (the default in Ruby 3.1) behavior.
 gem "psych", "< 4"
 
+# required by puma
+gem "matrix"
 gem "puma"
 gem "uglifier", ">= 1.3.0"
 gem "webpacker"
@@ -41,7 +45,6 @@ gem "whenever"
 #   gem "rack-ssl-enforcer"
 #   gem "rails_12factor"
 # end
-# endif
 
 group :development, :test do
   gem "better_errors"

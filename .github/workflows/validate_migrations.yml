@@ -1,4 +1,4 @@
-name: "[CI] App"
+name: "[CI] Validate migrations"
 
 on:
   push:
@@ -9,8 +9,10 @@ on:
   pull_request:
 
 env:
+  DB_DATABASE: app
+  DB_USERNAME: postgres
+  DB_PASSWORD: postgres
   RUBY_VERSION: 3.1.3
-  NODE_VERSION: 16.9.1
 
 jobs:
   test:
@@ -26,9 +28,6 @@ jobs:
           --health-retries 5
         env:
           POSTGRES_PASSWORD: postgres
-      redis:
-        image: redis:3.2-alpine
-        ports: ["6379:6379"]
     env:
       DB_TEST_DATABASE: app-test
       DB_DATABASE: app
@@ -36,6 +35,7 @@ jobs:
       DB_PASSWORD: postgres
       DB_HOST: localhost
       SECRET_KEY_BASE: "secret_key_base"
+
 
     steps:
       - uses: actions/checkout@v2.0.0
@@ -45,22 +45,6 @@ jobs:
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
-
-      # Workaround https://github.com/decidim/decidim/issues/12369
-      - uses: nanasess/setup-chromedriver@v2
-        with:
-          chromedriver-version: 119.0.6045.105
-
-      - name: List Chrome
-        run: apt list --installed | grep chrome
-
-      - name: Remove Chrome
-        run: sudo apt remove google-chrome-stable
-
-      - uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: 119.0.6045.105
-
       - name: Recover Ruby dependency cache
         uses: actions/cache@v1
         with:
@@ -70,6 +54,9 @@ jobs:
             ${{ runner.OS }}-app-rubydeps-${{ env.cache-name }}-
             ${{ runner.OS }}-app-rubydeps-
 
+      - name: Set bundle local config vendor/bundle path
+        run: bundle config set --local path 'vendor/bundle'
+
       - name: Install Ruby deps
         uses: nick-invision/retry@v2
         with:
@@ -78,12 +65,5 @@ jobs:
           retry_on: error
           command: bundle install --jobs 4 --retry 3
 
-      - uses: actions/setup-node@v2
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-      - run: npm install
-      - run: bundle exec rake db:test:prepare
-        name: Setup database
-      - run: bundle exec rspec
-        name: Run specs
+      - name: Run specs
+        run: bin/rails cdtb:upgrades:validate_migrations

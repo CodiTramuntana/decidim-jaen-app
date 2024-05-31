@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Decidim.configure do |config|
+  # The name of the application
   config.application_name = Rails.application.secrets.decidim[:application_name]
 
   # The email that will be used as sender in all emails from Decidim
@@ -8,6 +9,14 @@ Decidim.configure do |config|
 
   # Change these lines to set your preferred locales
   config.default_locale = :es
+
+  # Sets the list of available locales for the whole application.
+  #
+  # When an organization is created through the System area, system admins will
+  # be able to choose the available languages for that organization. That list
+  # of languages will be equal or a subset of the list in this file.
+  # config.available_locales = Rails.application.secrets.decidim[:available_locales].presence || [:en]
+  # Or block set it up manually and prevent ENV manipulation:
   config.available_locales = %w(en es)
 
   # Sets the default locale for new organizations. When creating a new
@@ -58,14 +67,5 @@ Decidim.register_assets_path File.expand_path("app/packs", Rails.application.roo
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
 
-Rails.application.config.after_initialize do
-  workflow= Decidim::Verifications.find_workflow_manifest("file_authorization_handler")
-  workflow.action_authorizer = "Decidim::AgeAndDistrictActionAuthorization::Authorizer"
-  workflow.options do |options|
-    options.attribute :min_age, type: :string, required: false
-    options.attribute :max_age, type: :string, required: false
-    options.attribute :allowed_districts, type: :string, required: false
-  end
-end
 # Inform Decidim about the assets folder
 Decidim.register_assets_path File.expand_path("app/packs", Rails.application.root)
