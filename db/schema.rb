@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_28_102452) do
+ActiveRecord::Schema.define(version: 2024_05_31_065329) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -764,7 +764,7 @@ ActiveRecord::Schema.define(version: 2022_12_28_102452) do
     t.bigint "resource_id"
     t.string "decidim_author_type"
     t.bigint "decidim_author_id"
-    t.integer "decidim_user_group_id"
+    t.integer "decidim_user_group_id", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["decidim_author_type", "decidim_author_id"], name: "idx_endorsements_authors"

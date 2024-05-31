@@ -16,6 +16,8 @@ gem "decidim-verifications-members_picker", git: "https://github.com/gencat/deci
 
 gem "decidim-clave", git: "https://github.com/CodiTramuntana/decidim-module-clave.git"
 
+gem "decidim-cdtb"
+
 # temporal solution while gems embrace new psych 4 (the default in Ruby 3.1) behavior.
 gem "psych", "< 4"
 
