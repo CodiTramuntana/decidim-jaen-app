@@ -911,7 +911,7 @@ DEPENDENCIES
   whenever
 
 RUBY VERSION
-   ruby 3.0.6p216
+   ruby 3.0.7p220
 
 BUNDLED WITH
-   2.4.10
+   2.4.12
