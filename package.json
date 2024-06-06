@@ -20,6 +20,8 @@
     "extends @decidim/browserslist-config"
   ],
   "devDependencies": {
+    "@babel/plugin-proposal-private-methods": "^7.18.6",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@decidim/dev": "file:packages/dev",
     "@decidim/eslint-config": "file:packages/eslint-config",
     "@decidim/stylelint-config": "file:packages/stylelint-config",
