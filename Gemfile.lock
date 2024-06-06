@@ -912,6 +912,7 @@ DEPENDENCIES
   decidim-consultations!
   decidim-dev!
   decidim-file_authorization_handler!
+  decidim-templates!
   decidim-term_customizer!
   decidim-verifications-members_picker!
   delayed_job_active_record
