@@ -4,9 +4,9 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = { git: "https://github.com/CodiTramuntana/decidim.git", branch: "release/0.27-stable" }.freeze
+DECIDIM_VERSION = { git: "https://github.com/CodiTramuntana/decidim.git", branch: "release/0.27-decidim_templates" }.freeze
 
-gem "decidim", "0.27.5", DECIDIM_VERSION
+gem "decidim", "0.27.6", DECIDIM_VERSION
 gem "decidim-age_and_district_action_authorization", git: "https://github.com/CodiTramuntana/decidim-module-age_and_district_action_authorization"
 gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-consultations", DECIDIM_VERSION
