@@ -224,12 +224,12 @@ GIT
 
 GIT
   remote: https://github.com/gencat/decidim-verifications-members_picker.git
-  revision: c72facbc79dd4c4d8753a1330a6978ad7259f746
-  tag: 0.0.2
+  revision: 7a6b7d2f52efa52d815a314b9e76cbbc804a8815
   specs:
-    decidim-verifications-members_picker (0.0.2)
-      decidim-core (>= 0.16.0)
-      decidim-verifications (>= 0.16.0)
+    decidim-verifications-members_picker (0.0.6)
+      decidim-core (>= 0.27.5)
+      decidim-verifications (>= 0.27.5)
+      psych (< 4)
 
 GIT
   remote: https://github.com/mainio/decidim-module-term_customizer.git
@@ -915,7 +915,7 @@ DEPENDENCIES
   decidim-file_authorization_handler!
   decidim-templates!
   decidim-term_customizer!
-  decidim-verifications-members_picker!
+  decidim-verifications-members_picker (= 0.0.6)!
   delayed_job_active_record
   faker
   figaro (>= 1.1.1)

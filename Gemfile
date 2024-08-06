@@ -14,7 +14,7 @@ gem "decidim-templates", DECIDIM_VERSION
 
 gem "decidim-file_authorization_handler", git: "https://github.com/CodiTramuntana/decidim-file_authorization_handler.git", tag: "v0.27.1.7"
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer.git", branch: "release/0.27-stable"
-gem "decidim-verifications-members_picker", git: "https://github.com/gencat/decidim-verifications-members_picker.git", tag: "0.0.2"
+gem "decidim-verifications-members_picker", "0.0.6", git: "https://github.com/gencat/decidim-verifications-members_picker.git"
 
 gem "decidim-clave", git: "https://github.com/CodiTramuntana/decidim-module-clave.git"
 
