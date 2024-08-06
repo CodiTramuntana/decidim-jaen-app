@@ -224,7 +224,7 @@ GIT
 
 GIT
   remote: https://github.com/gencat/decidim-verifications-members_picker.git
-  revision: 7a6b7d2f52efa52d815a314b9e76cbbc804a8815
+  revision: ee3a97421eeab3b21c8a6f8947830a91837ba2b9
   specs:
     decidim-verifications-members_picker (0.0.6)
       decidim-core (>= 0.27.5)
