@@ -40,6 +40,27 @@ GIT
   revision: 9ea65926c526c968666c163c9b7e7484c073d6f6
   branch: release/0.27-stable
   specs:
+    decidim (0.27.8)
+      decidim-accountability (= 0.27.8)
+      decidim-admin (= 0.27.8)
+      decidim-api (= 0.27.8)
+      decidim-assemblies (= 0.27.8)
+      decidim-blogs (= 0.27.8)
+      decidim-budgets (= 0.27.8)
+      decidim-comments (= 0.27.8)
+      decidim-core (= 0.27.8)
+      decidim-debates (= 0.27.8)
+      decidim-forms (= 0.27.8)
+      decidim-generators (= 0.27.8)
+      decidim-meetings (= 0.27.8)
+      decidim-pages (= 0.27.8)
+      decidim-participatory_processes (= 0.27.8)
+      decidim-proposals (= 0.27.8)
+      decidim-sortitions (= 0.27.8)
+      decidim-surveys (= 0.27.8)
+      decidim-system (= 0.27.8)
+      decidim-templates (= 0.27.8)
+      decidim-verifications (= 0.27.8)
     decidim-accountability (0.27.8)
       decidim-comments (= 0.27.8)
       decidim-core (= 0.27.8)
@@ -194,33 +215,6 @@ GIT
       decidim-forms (= 0.27.8)
     decidim-verifications (0.27.8)
       decidim-core (= 0.27.8)
-
-GIT
-  remote: https://github.com/CodiTramuntana/decidim.git
-  revision: 9ea65926c526c968666c163c9b7e7484c073d6f6
-  branch: release/0.27-stable
-  specs:
-    decidim (0.27.8)
-      decidim-accountability (= 0.27.8)
-      decidim-admin (= 0.27.8)
-      decidim-api (= 0.27.8)
-      decidim-assemblies (= 0.27.8)
-      decidim-blogs (= 0.27.8)
-      decidim-budgets (= 0.27.8)
-      decidim-comments (= 0.27.8)
-      decidim-core (= 0.27.8)
-      decidim-debates (= 0.27.8)
-      decidim-forms (= 0.27.8)
-      decidim-generators (= 0.27.8)
-      decidim-meetings (= 0.27.8)
-      decidim-pages (= 0.27.8)
-      decidim-participatory_processes (= 0.27.8)
-      decidim-proposals (= 0.27.8)
-      decidim-sortitions (= 0.27.8)
-      decidim-surveys (= 0.27.8)
-      decidim-system (= 0.27.8)
-      decidim-templates (= 0.27.8)
-      decidim-verifications (= 0.27.8)
 
 GIT
   remote: https://github.com/gencat/decidim-verifications-members_picker.git
@@ -938,4 +932,4 @@ RUBY VERSION
    ruby 3.0.7p220
 
 BUNDLED WITH
-   2.4.12
+   2.2.33
