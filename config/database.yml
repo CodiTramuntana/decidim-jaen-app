@@ -22,3 +22,4 @@ preprod:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
+  sslmode: require
